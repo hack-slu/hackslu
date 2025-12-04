@@ -156,7 +156,6 @@ export default function HackSLU() {
               hackSLU
             </h1>
           </div>
-          <h3 className="text-3xl font-bold text-center mb-6">February 21 - 22, 2026</h3>
           
           {/* Navigation menu */}
           <nav className="flex flex-col space-y-3 text-3xl">
@@ -221,6 +220,7 @@ export default function HackSLU() {
       {/* about */}
       <section id="about" className="max-w-4xl mx-auto px-6 py-20 min-h-screen flex flex-col justify-center text-white">
         <h3 className="text-3xl font-bold text-center mb-6">About</h3>
+        <p className="mt-2 text-lg text-center mb-6">February 21 - 22, 2026</p>
         <p className="mt-2 text-lg text-center mb-12">
           HackSLU 2026 is our annual student-run hackathon bringing together creative thinkers, designers, and developers. Below are the 
           images from HackSLU 2025!
