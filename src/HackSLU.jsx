@@ -109,13 +109,13 @@ export default function HackSLU() {
             >
               faq
             </a>
-            <a 
+            {/*<a 
               href="#sponsors" 
               onClick={(e) => scrollToSection(e, 'sponsors')}
               className="hover:text-blue-400 transition-colors cursor-pointer font-semibold"
             >
               sponsors
-            </a>
+            </a>*/}
             <a 
               href="#contact" 
               onClick={(e) => scrollToSection(e, 'contact')}
@@ -133,7 +133,7 @@ export default function HackSLU() {
           {/* Logo and Title */}
           <div className="flex items-center justify-center gap-6 mb-8">
             <img 
-              src="src/assets/mascot.png" 
+              src="./assets/mascot.png" 
               alt="HackSLU Logo" 
               className="w-32 h-32 rounded-lg flex-shrink-0"
             />
@@ -171,7 +171,7 @@ export default function HackSLU() {
               <span className={`mr-3 transition-all text-2xl ${selectedItem === 'faq' ? 'text-blue-400 animate-pulse opacity-100' : 'opacity-0'}`}>►</span>
               <span className={selectedItem === 'faq' ? 'text-blue-400' : ''}>faq</span>
             </a>            
-            <a 
+            {/* <a 
               href="#sponsors" 
               onClick={(e) => scrollToSection(e, 'sponsors')}
               onMouseEnter={() => setSelectedItem('sponsors')}
@@ -179,7 +179,7 @@ export default function HackSLU() {
             >
               <span className={`mr-3 transition-all text-2xl ${selectedItem === 'sponsors' ? 'text-blue-400 animate-pulse opacity-100' : 'opacity-0'}`}>►</span>
               <span className={selectedItem === 'sponsors' ? 'text-blue-400' : ''}>sponsors</span>
-            </a>
+            </a> */}
             <a 
               href="#contact" 
               onClick={(e) => scrollToSection(e, 'contact')}
@@ -298,13 +298,29 @@ export default function HackSLU() {
       </section>
 
       {/* sponsors */}
-      <section id="sponsors" className="max-w-4xl mx-auto px-6 py-20 min-h-screen flex flex-col justify-center text-white">
+      {/* <section id="sponsors" className="max-w-4xl mx-auto px-6 py-20 min-h-screen flex flex-col justify-center text-white">
         <h3 className="text-3xl font-bold text-center mb-6">Sponsors</h3>
         <p className="text-center text-lg">We're grateful for our amazing sponsors who make this event possible.</p>
         <div className="mt-8 space-y-4 text-center">
           <p className="text-xl font-semibold">Sponsor 1</p>
           <p className="text-xl font-semibold">Sponsor 2</p>
           <p className="text-xl font-semibold">Sponsor 3</p>
+        </div>
+      </section> */}
+
+      {/* volunteer */}
+      <section id="volunteer" className="max-w-4xl mx-auto px-6 py-20 min-h-screen flex flex-col justify-center text-white">
+        <h3 className="text-3xl font-bold text-center mb-6">Volunteer</h3>
+        <p className="text-center mb-8 text-lg">Interested in helping out? Join our volunteer team!</p>
+        <div className="flex justify-center">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc3yDQsiuhUTXC04KNm0SqF5ZgJ70XZmNTGKG5cK0t0O0lFPg/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition-colors text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            Volunteer Now
+          </a>
         </div>
       </section>
 
