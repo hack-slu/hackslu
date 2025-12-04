@@ -155,8 +155,8 @@ export default function HackSLU() {
             <h1 className="text-8xl font-black text-blue-500 animate-pulse">
               hackSLU
             </h1>
-            <h3 className="text-3xl font-bold text-center mb-6">February 21 - 22, 2026</h3>
           </div>
+          <h3 className="text-3xl font-bold text-center mb-6">February 21 - 22, 2026</h3>
           
           {/* Navigation menu */}
           <nav className="flex flex-col space-y-3 text-3xl">
@@ -196,6 +196,15 @@ export default function HackSLU() {
               <span className={`mr-3 transition-all text-2xl ${selectedItem === 'sponsors' ? 'text-blue-400 animate-pulse opacity-100' : 'opacity-0'}`}>►</span>
               <span className={selectedItem === 'sponsors' ? 'text-blue-400' : ''}>sponsors</span>
             </a> */}
+            <a 
+              href="#volunteer" 
+              onClick={(e) => scrollToSection(e, 'volunteer')}
+              onMouseEnter={() => setSelectedItem('volunteer')}
+              className="hover:text-blue-400 transition-all cursor-pointer flex items-center justify-center"
+            >
+              <span className={`mr-3 transition-all text-2xl ${selectedItem === 'volunteer' ? 'text-blue-400 animate-pulse opacity-100' : 'opacity-0'}`}>►</span>
+              <span className={selectedItem === 'volunteer' ? 'text-blue-400' : ''}>volunteer</span>
+            </a>
             <a 
               href="#contact" 
               onClick={(e) => scrollToSection(e, 'contact')}
